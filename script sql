@@ -1,0 +1,13 @@
+CREATE DATABASE genealogia;
+
+CREATE TABLE user
+(
+id binary(16);
+username varchar(255);
+treelength int(10);
+);
+
+CREATE TABLE contactlink
+(
+
+);

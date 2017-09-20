@@ -1,0 +1,17 @@
+{
+    "name": "genea",
+    "description": "Projet d'arbre généalogique",
+    "type": "project",
+    "license": "GNU",
+    "require": {
+        "illuminate/database": "5.0.*",
+        "twbs/bootstrap": "^3.3",
+        "slim/slim": "2.*",
+        "php": ">=5.4.0"
+    },
+	"autoload": {
+    		"psr-0": {
+      		"genea": "src"
+    		}
+  	}
+}
