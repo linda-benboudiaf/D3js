@@ -50,7 +50,7 @@ END;
 		$content = "<header class=\"navbar navbar-inverse\" >
 			<div class=\"container\">
 				<div class=\"navbar-header\">
-					<a class=\"navbar-brand\" href=\"".$app->urlFor('racine')."\">Projet Genea</a>
+					<a class=\"navbar-brand\" href=\"".$app->urlFor('racine')."\">Genea Tree</a>
 				</div>
 			</div>
 		</header>";

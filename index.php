@@ -13,6 +13,7 @@ use genea\Vue\Vue as Vue;
 use Slim\Slim as Slim;
 
 
+
 $app = new Slim();
 $vue = new Vue();
 
