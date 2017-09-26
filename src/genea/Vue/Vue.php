@@ -5,8 +5,8 @@ session_start();
 
 class Vue{
 	function render($app, $content, $selection=NULL, $id=NULL) {
-		$urlcss = str_replace("index.php", "", $app->urlFor('racine'));
-		
+		#supprime dans l'uri de base index.php et le "/" de fin
+		$urlcss = preg_replace("~\/$~", '', preg_replace("~(\/)?index\.php(\/)?~", '', $app->urlFor('racine')));
 		
 		
 		if(isset($selection)) {
