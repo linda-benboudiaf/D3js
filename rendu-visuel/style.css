@@ -1,7 +1,10 @@
  .arbre {
-    width: 70%;
-    border: 10px solid green;
-    padding: 4%;
+    width: 30%;
+    box-sizing: border-box;
+    border: 10px;
+    background-color: green;
+    box-shadow: #666 6px 6px 3px;
+    padding: 10px;
     margin: 10%;
-
- }
+    border-radius: 10px;
+}
