@@ -18,20 +18,36 @@
     </head>
     <body>
         <script type="text/javascript">
-			var dataset = [];                        // Crée un tableau vide
-			for (var i = 0; i < 50; i++) {           // Itère 25 fois
-				var newNumber = Math.random() * 30;  // Nouveau nombre aléatoire (0-30)
-				dataset.push(newNumber);             // Ajoute le nouveau nombre au tableau
-			}
-            d3.select("body").selectAll("div")
-				.data(dataset)
-				.enter()
-				.append("div")
-				.attr("class", "bar")
-				.style("height", function(d) {
-					var barHeight = d * 5;
-					return barHeight + "px";
-				});
+			var w = 500;
+			var h = 200;
+			var svg = d3.select("body").append("svg").attr("width", w).attr("height", h); // définition du svg
+			var dataset = ["Jean", "Patrick", "Linda", "Pacome", "Nina"];              // Crée un tableau vide
+			var circles = svg.selectAll("circle")
+								.data(dataset)
+								.enter()
+								.append("circle");
+			var texts = svg.selectAll("text")
+								.data(dataset)
+								.enter()
+								.append("text");
+			circles.attr("cx", function(d, i) {
+									return (i * 70) + 35;
+								})
+					.attr("cy", h/2)
+					.attr("r", "35")
+					.attr("fill", "white")
+					.attr("stroke", "red")
+					.attr("stroke-width", function(d, i) {
+											return i+1;
+					});
+			texts.attr("x", function(d, i) {
+									return (i * 70) + 35;
+								})
+					.attr("y", h/2)
+					.attr("text-anchor", "middle")
+					.text(function(d) {
+						return d;
+						});
         </script>
     </body>
 </html>
