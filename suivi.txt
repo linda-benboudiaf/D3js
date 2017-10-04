@@ -1,6 +1,11 @@
 
 Ce q'on prevoit de faire : 
 
-
-- Avancer sur la realistaion graphique de l'arbre 
-- On est a la base. 
+03/10/2017
+- Avancer sur la realisation graphique de l'arbre 
+- On est a la base.
+- fin de discussion, début de travail avec D3js
+04/10/201
+- Comprendre le fonctionnement de D3js et proposer un rendu D3js convenable
+- On est au début du code de la fonctionnalité coeur
+- 
