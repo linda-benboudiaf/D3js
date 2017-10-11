@@ -5,7 +5,11 @@ Ce q'on prevoit de faire :
 - Avancer sur la realisation graphique de l'arbre 
 - On est a la base.
 - fin de discussion, début de travail avec D3js
-04/10/201
+04/10/2017
 - Comprendre le fonctionnement de D3js et proposer un rendu D3js convenable
 - On est au début du code de la fonctionnalité coeur
-- 
+- Bonne avancée dans les tuto de D3js
+11/10/2017
+- Comprendre le fonctionnement de D3js et proposer un rendu D3js convenable
+- On avance dans la partie "création d'arbre" de D3js
+- Fin de l'apprentissage du tuto de base de D3js et avancée vers les particularités de l'affichage d'arbre
