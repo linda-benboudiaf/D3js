@@ -1,0 +1,19 @@
+http://d3js.org
+
+http://kaisersly.github.io/scottmurray-d3-fr/
+
+arbre : 
+https://bl.ocks.org/kanesee/5d6c48bffd4ea31201fb
+view-source:https://mohansun-canvas.herokuapp.com/content/training/
+view-source:http://taxontree.bpodgursky.com/
+
+https://github.com/d3/d3/wiki/Gallery#tree
+
+https://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/
+
+
+note : en D3, il existe déjà un objet "tree" que l'on peut utiliser.
+https://github.com/d3/d3-hierarchy/blob/master/README.md#tree
+
+Data Example : 
+https://gw.geneanet.org/tdowling?lang=fr&n=soros&oc=0&p=george&type=tree

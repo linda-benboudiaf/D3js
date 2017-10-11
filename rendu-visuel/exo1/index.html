@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3.v3.js"></script>
+        <style type="text/css">
+		
+			div.bar {
+				display: inline-block;
+				width: 20px;
+				height: 75px;	/* Gets overriden by D3-assigned height below */
+				margin-right: 2px;
+				background-color: teal;
+			}
+		
+		</style>
+    </head>
+    <body>
+        <script type="text/javascript">
+			var w = 500;
+			var h = 200;
+			var svg = d3.select("body").append("svg").attr("width", w).attr("height", h); // définition du svg
+			var dataset = [
+			{
+				0: 2,
+				1: "Zlatan"
+			}
+			, {
+				0: 4,
+				1: "Linda"
+			}
+			, {
+				0: 8,
+				1: "Pacpac"
+			}
+			, {
+				0: 10,
+				1: "Botruc"
+			}
+			, {
+				0: 100,
+				1: "Nina"
+			}
+			, {
+				0: 10000,
+				1: "Arhi"
+			}
+			];              // Crée un tableau vide
+			var scale = d3.scale.linear();
+			scale.domain([0, 100]); // entrée
+			scale.range([0, 20]); // sortie
+			scale.clamp(true); // obligatoire pour nous, sinon, overflow...
+			var circles = svg.selectAll("circle")
+								.data(dataset)
+								.enter()
+								.append("circle");
+			var texts = svg.selectAll("text")
+								.data(dataset)
+								.enter()
+								.append("text");
+			circles.attr("cx", function(d, i) {
+									return (i * 70) + 35;
+								})
+					.attr("cy", h/2)
+					.attr("r", function(d) {
+							return scale(d[0]);
+						})
+					.attr("fill", "white")
+					.attr("stroke", "red")
+					.attr("stroke-width", function(d, i) {
+											return i+1;
+					});
+			texts.attr("x", function(d, i) {
+									return (i * 70) + 35;
+								})
+					.attr("y", h/2)
+					.attr("text-anchor", "middle")
+					.text(function(d) {
+						return d[1];
+						});
+        </script>
+    </body>
+</html>
