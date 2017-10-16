@@ -13,3 +13,6 @@ Ce q'on prevoit de faire :
 - Comprendre le fonctionnement de D3js et proposer un rendu D3js convenable
 - On avance dans la partie "création d'arbre" de D3js
 - Fin de l'apprentissage du tuto de base de D3js et avancée vers les particularités de l'affichage d'arbre
+16/10/2017
+- Tester différents rendu et mettre en oeuvre une structure de donnée efficace pour l'architecture visuelle de l'arbre.
+- On effectue des tests pour obtenir un rendu correcte à partir d'un fichier de test JSON à base de nodes.
