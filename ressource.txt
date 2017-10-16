@@ -20,6 +20,10 @@ Nous nous sommes donc rabbatus sur des nodes que nous agencerons graphique pour 
 tree avec plusieurs parents : 
 http://bl.ocks.org/robschmuecker/6afc2ecb05b191359862
 
+Solution : 
+
+Pourquoi ne pas tenter de faire plusieurs arbres JSON à ajouter ? Si on tente de faire des refs en childrens, on doit pouvoir afficher de multiples tree(), à voir le rendu visuelle que cela donnerais ainsi que les bugs...
+
 
 note : en D3, il existe déjà un objet "tree" que l'on peut utiliser.
 https://github.com/d3/d3-hierarchy/blob/master/README.md#tree
