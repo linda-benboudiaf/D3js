@@ -17,6 +17,9 @@ Il semble que le modèle de structure de donnée "tree" fournit dans D3js crée 
 En effet, il offre la possibilité de mettre plusieurs enfants à un noeud, ce qui est logique pour un arbre généalogique, mais il ne semble admettre qu'un seul parent, ce qui ne permet pas d'intégrer aisément des arbre généalogiques complexes avec les notions d'héritage multiples.
 Nous nous sommes donc rabbatus sur des nodes que nous agencerons graphique pour leur donner l'apparence d'un arbre généalogique.
 
+tree avec plusieurs parents : 
+http://bl.ocks.org/robschmuecker/6afc2ecb05b191359862
+
 
 note : en D3, il existe déjà un objet "tree" que l'on peut utiliser.
 https://github.com/d3/d3-hierarchy/blob/master/README.md#tree
