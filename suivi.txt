@@ -16,3 +16,8 @@ Ce q'on prevoit de faire :
 16/10/2017
 - Tester différents rendu et mettre en oeuvre une structure de donnée efficace pour l'architecture visuelle de l'arbre.
 - On effectue des tests pour obtenir un rendu correcte à partir d'un fichier de test JSON à base de nodes.
+- Avancée sur le fonctionnement des hierarchy
+24/10/2017
+- Affichage graphique d'arbre à parents multiples
+- On effectue une mise en place pratique des connaissances acquises précédemment
+- Découverte des problématiques avancées d'affichage via path.
