@@ -1,5 +1,5 @@
 
-Ce q'on prevoit de faire : 
+Ce qu'on prévoit de faire : 
 
 03/10/2017
 - Avancer sur la realisation graphique de l'arbre 
@@ -21,3 +21,7 @@ Ce q'on prevoit de faire :
 - Affichage graphique d'arbre à parents multiples
 - On effectue une mise en place pratique des connaissances acquises précédemment
 - Découverte des problématiques avancées d'affichage via path.
+27/10/2017
+- Recherche sur l'affichage graphique et le traitement de donnée
+- On effectue des recherche sur la façon d'afficher proprement l'abre en liant les données.
+- Découverte de hierarchy, stratify et de structure node
