@@ -21,15 +21,36 @@ d3.json("d3-data.json", function(error, treeData) {
 
   //  assigns the data to a hierarchy using parent-child relationships
   nodesc = d3.hierarchy(treeData, function(d) {
-    return d.parents; //remplacer parents par children, trouver un moyen de concilier proprement les deux.
-    });
+    ///////return d.parents; //remplacer parents par children, trouver un moyen de concilier proprement les deux.
+    var l = d.parents; // affichage des parents en passant par une variable 
+    if (l == undefined){ // teste non Lecture par le navigateur ... 
+      l =  [] ;  
+    }
+    if (d.children == undefined){
+      return l; 
+    }
+    l.push.apply(l,d.children); // en passant pa une variable 
+    return l;
+  });
 
   // maps the node data to the tree layout
   nodesc = treemap(nodesc);
   
   //  assigns the data to a hierarchy using parent-child relationships
   nodesp = d3.hierarchy(treeData, function(d) {
-    return d.parents;
+    var l = d.parents; // 
+    if (l == undefined){
+      l = [] ; // laisse vide 
+    }
+    if (d.children == undefined){ // testes 
+      return l; 
+    }
+    
+    l.push.apply(l,d.children);
+    return l;
+
+
+
     });
 
   // maps the node data to the tree layout
