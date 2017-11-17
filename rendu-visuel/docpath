@@ -1,0 +1,9 @@
+.attr("d", function(d) {
+       return "M" + d.y*1.5 + "," + d.x
+       + "C" + (d.y + d.parent.y)/0.9 + "," + d.x
+       + " " + (d.y + d.parent.y)*1.5 + "," + d.parent.x
+       + " " + (width-d.parent.y) + "," + d.parent.x;
+       });
+
+
+M correspond à la distance sur l'axe des x et des y.

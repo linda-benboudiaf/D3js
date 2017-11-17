@@ -13,10 +13,6 @@
         {
             "name": "Jean michel belle-maman",
             "isparent": true
-        },
-                {
-            "name": "Jean michel beau-papa",
-            "isparent": true
         }
     ],
     "children": [
