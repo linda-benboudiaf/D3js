@@ -6,4 +6,8 @@
        });
 
 
-M correspond à la distance sur l'axe des x et des y.
+M correspond à un moveto qui a comme paramètre x & y
+C correspond à une courbe de Bézier cubique.
+c1x,c1y c2x,c2y correspondent aux paramètres de construction de la courbe (voir image).
+et x, y à la fin correspondent à sa taille sur l'axe des x et des y.
+https://upload.wikimedia.org/wikipedia/commons/c/c6/Bezier_forth_anim.gif?uselang=fr
