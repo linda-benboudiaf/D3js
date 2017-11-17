@@ -10,13 +10,20 @@
 
 
         <div id="login"> 
-                <form name='form-login'> <!-- Formulaire de login -->
+                <form name='form-login' action="ecrire.php" method="post"> <!-- Formulaire de login -->
+                    <input type="text" id="user" placeholder= " Cree un Identifiant">
                     <input type="text" id="nom"  placeholder="Nom" >
                     <input type="text" id="prenom" placeholder="Prenom">
-                    <input type="text" id="user" placeholder="Nom d'utilisateur">
                     <input type="password" id"pass" placeholder="mot de passe">
               
                   <input type="submit" value="Inscription"> <!-- button submit de connexion --> 
               </form>
-    
+
+
+              <div id="famille"> 
+                <form name='form-famille ' action="ecrire.php" method="post"> <!-- Formulaire de login -->
+                    <input type="text" id="nom_pere"  placeholder="Nom et Prenom PAPA" >
+                    <input type="text" id="nom_mere" placeholder="Nom et Prenom Maman">
+                  
+              </form>
 </body>
