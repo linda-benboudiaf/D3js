@@ -1,9 +1,8 @@
 
 body {
-  background: #e8ebec;
   color: #a3c3e4;
   font: 87.5%/1.5em 'Open Sans', sans-serif;
-  margin: 3;
+
 }
 
 input {
@@ -66,5 +65,26 @@ p {
 
 }
 #login form input[type="submit"]:hover {
-  background: #034720;
+  background: #e7e404;
+}
+
+
+ul {
+  padding: 0;
+  background-color: #f1fd01d2;
+  position: fixed;
+}
+
+li a {
+  display: block;
+  color:  rgb(112, 60, 11);
+  padding: 8px 16px;
+  text-decoration: none; /*pour enlever le souligneur */
+}
+
+
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
