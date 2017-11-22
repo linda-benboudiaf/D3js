@@ -4,7 +4,7 @@
 <head>
 <title>S'enregister </title>
 <link rel="stylesheet" href="css/subscribe.css">
-<a href="index.html"><img src="img/logo2.png" alt="logo" width="150" height="150"></a>
+<a href="index.html"><img src="img/logo3.png" alt="logo" width="150" height="150"></a>
 </head>
 <body> 
 
