@@ -9,6 +9,7 @@ function dezoom(x) {
     x.style.width = "100px";
 }
 
+// fonction qui permet de faire un slide dans la page d'acceuil ... 
 $(document).ready(function(){
     $("#cadre").click(function(){
         $("#panel").slideToggle("slow");

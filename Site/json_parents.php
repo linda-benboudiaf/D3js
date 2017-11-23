@@ -4,11 +4,12 @@ header ('Content-Type: application/json');
     $bdd = new PDO('mysql:host=localhost;dbname=genea;charset=utf8', 'root', 'root');
     //je recupere le contenue d la table personne ... "data"
 
-$data = $bdd->query('SELECT * FROM personne');
+    //$data = $bdd->query('SELECT * FROM personne');
 
 
- 
-$data = $bdd->query('SELECT * FROM personne');
+$data = $bdd->query('SELECT p2.nom, p2.prenom, p3.nom, p3.prenom 
+FROM personne p1 , personne p2, personne p3
+where p1.pere = p2.numpers and p1.mere= p3.numpers'); // on Récupere les noms et prenoms des parents (Pere et mere)
 // On affiche chaque entrée une à une
 $donnees = $data->fetchall(); 
 
