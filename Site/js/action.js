@@ -18,6 +18,20 @@ $(document).ready(function(){
 
 
 
+// ajouter une fonction hide jQuery et mettre une petite librairie... 
+
+var x = false;
+$(".img").on('click',function(){
+  if(x){
+	$(".img_affich").hide('slow', 'linear');
+    x= false;
+   }else{
+	$(".img_affich").show('slow', 'linear');
+    x= true;
+  }
+});
+
+
 var index = 1;
 defile(index);
 
@@ -46,4 +60,5 @@ function defile(n) {
 } 
 
 
-// ajouter une fonction hide 
+
+

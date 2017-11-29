@@ -1,8 +1,6 @@
 body {
     margin: 0;
 }
-
-
 ul {
     cursor: position: relative;
     padding: 0;
@@ -18,7 +16,6 @@ li a {
     text-decoration: none; /*pour enlever le souligneur */
 }
 
-
 li a:hover:not(.active) {
     background-color: rgb(169, 238, 8);
     color: white;
@@ -28,38 +25,34 @@ li a:hover:not(.active) {
     padding: 10px;
     text-align: center;
     display: block;
-    
 }
 .contenue {
 margin-left: 200px;
 padding-left: 20px;
 margin-right: 200px;
 }
-
-
 #panel, #cadre{
     padding: 10px;
     text-align: right;
-    background-color: rgb(204, 245, 102);
+    background-color: rgb(202, 238, 136);
     border: solid 1px #bcdd00;
     cursor: pointer;
 }
-
 button:hover :not(.active) {
     background-color: rgb(169, 238, 8);
     color: white;
 }
-
 #panel {
     padding: 50px;
     display: none;
 }
+
 .slideshow{
     position: relative;
   }
 
 .dot {
-    cursor:pointer;
+
     height: 15px;
     width: 15px;
     background-color: rgb(207, 230, 1);
@@ -84,4 +77,21 @@ button:hover :not(.active) {
   .prec:hover, .suiv:hover {
     background-color: rgba(229, 233, 10, 0.918);
   }
- 
+.img_affich {
+    display: none ;
+}
+button.img:hover{
+    background-color: rgb(169, 238, 8);
+    color: white;
+}
+button.img {
+    text-align: center;
+    margin-left: 400px;
+    border-radius: 8px;
+    border: none; 
+    padding-right:70px; 
+    padding-left: 70px;
+    padding-top: 4px;
+    padding-bottom: 4px;  
+    background-color: rgba(229, 233, 10, 0.918)
+}
