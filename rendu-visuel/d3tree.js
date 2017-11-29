@@ -1,11 +1,13 @@
 // set the dimensions and margins of the diagram
 var margin = {top: 20, right: 180, bottom: 30, left: 180},
-  width = 660 - margin.left - margin.right,
-  height = 700 - margin.top - margin.bottom;
+  width = 700 - margin.left - margin.right,
+  height = 700 - margin.top - margin.bottom,
+  widthoffset = 200;
+  
 
 var svg = d3.select("section").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom),
+      .attr("width", width + widthoffset + margin.left + margin.right)
+      .attr("height", height  + margin.top + margin.bottom),
     g = svg.append("g")
       .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
@@ -28,12 +30,20 @@ d3.json("d3-data.json", function(error, treeData) {
     return d.parents;
   });
   
+  nodesw = d3.hierarchy(treeData, function(d) {
+	return d.wife;  
+  });
+  
   d = d3.hierarchy(treeData);
 
   // maps the node data to the tree layout
   nodesc = treemap(nodesc);
   
   nodesp = treemap(nodesp);
+  
+  nodesw = treemap(nodesw);
+  
+  d = treemap(d);
 
   // adds the links between the nodes
   link = g.selectAll(".link")
@@ -41,7 +51,7 @@ d3.json("d3-data.json", function(error, treeData) {
     .enter().append("path")
     .attr("class", "link")
     .attr("d", function(d) {
-       return leftCurve(d.parent.x, d.parent.y, 0, d.x, d.y);
+       return leftCurve(d.parent.x, d.parent.y, 0, d.x, d.y/1.5);
        });
        
   link1 = g.selectAll(".link1")
@@ -49,7 +59,7 @@ d3.json("d3-data.json", function(error, treeData) {
     .enter().append("path")
     .attr("class", "link")
     .attr("d", function(d) {
-       return rightCurve(d.parent.x, d.parent.y, 0, d.x, d.y);
+       return rightCurve(d.parent.x, width/1.5, 0, d.x, d.y);
        });
 
   // adds each node as a group
@@ -75,40 +85,36 @@ d3.json("d3-data.json", function(error, treeData) {
 				.attr("class", function(d) {
 					return "node node--internal";})
 				.attr("transform", function(d) {
-					return "translate(" + width + ", " + height/2 + ")"; });
+					return "translate(" + width/1.5 + ", " + nodesc.x + ")"; });
+					
+					
+  // on regroupe tout ce beau monde
+	
+  listnoeuds = [nodeprimaire, node1, node];
       
 
-  // adds the circle to the node
-  nodeprimaire.append("circle")
-	.attr("r", 10);
-  
-  node.append("circle")
-    .attr("r", 10);
-    
-  node1.append("circle")
-    .attr("r", 10);
-    
+  // on ajoute les cercles
+ 
+  listnoeuds.forEach(function(e) {
+	  e.append("circle")
+		.attr("r", 10);
+	  });
 
-  // adds the text to the node
-  nodeprimaire.append("text")
-    .attr("dy", ".35em")
-    .attr("x", function(d) { return d.children ? -13 : 13; })
-    .style("text-anchor", function(d) { 
-		return d.children ? "end" : "start"; })
-    .text(function(d) { return d.name; });
+  // on ajoute le texte
   
-  node.append("text")
+  listnoeuds.forEach(function(e) {
+	  e.append("text")
     .attr("dy", ".35em")
-    .attr("x", function(d) { return d.children ? -13 : 13; })
-    .style("text-anchor", function(d) { 
-		return d.children ? "end" : "start"; })
-    .text(function(d) { return d.data.name; });
-   
-  node1.append("text")
-    .attr("dy", ".35em")
-    .attr("x", function(d) { return d.parent ? -13 : 13; })
+    .attr("x", function(d) { return d.children ? 13 : -13; })
     .style("text-anchor", function(d) { 
 		return d.parent ? "end" : "start"; })
-    .text(function(d) { return d.data.name; });
+    .text(function(d) { 
+		if(d.name) {
+			return d.name;
+		}else {
+			return d.data.name;
+		} 
+		});
+  });
     
 });

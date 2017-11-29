@@ -2,38 +2,35 @@
     "name": "Jean Michel généalogiste",
     "parents": [
         {
-            "name": "Jean michel papa",
-            "isparent": true
+            "name": "Jean michel papa"
         },
         {
-            "name": "Jean michel maman",
-            "isparent": true
+            "name": "Jean michel maman"
         },
         {
-            "name": "Jean michel belle-maman",
-            "isparent": true
+            "name": "Jean michel belle-maman"
         },
                 {
-            "name": "Jean michel beau-papa",
-            "isparent": true
+            "name": "Jean michel beau-papa"
         }
     ],
     "children": [
         {
-            "name": "Jean-michel Zlatan",
-            "isparent": false
+            "name": "Jean-michel Zlatan"
         },
         {
-            "name": "Jean michel Bruitage",
-            "isparent": false
+            "name": "Jean michel Bruitage"
         },
         {
-            "name": "Jean michel junior",
-            "isparent": false
+            "name": "Jean michel junior"
         },
         {
-            "name": "Jean michel Ahmed",
-            "isparent": false
+            "name": "Jean michel Ahmed"
         }
+    ],
+    "wife": [
+		{
+			"name" : "Jean michel Épouse"
+		}
     ]
 }

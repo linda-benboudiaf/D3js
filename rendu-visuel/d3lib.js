@@ -13,7 +13,7 @@ function leftCurve(parentx, parenty, espacement, x, y) {
 
 function rightCurve(parentx, parenty, espacement, x, y) {
 	return "M" + (y*1.5) + ", " + x +
-	"C" +  (((y + parenty) / 0.9) - espacement)  + ", " + x +
-	" " +  (((y + parenty) * 1.5) - espacement)  + ", " + parentx +
-	" " + y + ", " + parentx;
+	"C" +  ((y / 0.9) - espacement)  + ", " + x +
+	" " +  ((y * 1.5) - espacement)  + ", " + parentx +
+	" " + parenty + ", " + parentx;
 }
