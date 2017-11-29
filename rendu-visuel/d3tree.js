@@ -41,10 +41,7 @@ d3.json("d3-data.json", function(error, treeData) {
     .enter().append("path")
     .attr("class", "link")
     .attr("d", function(d) {
-       return "M" + (width-d.y) + "," + d.x
-       + "C" + (d.y + d.parent.y) / 2 + "," + d.x
-       + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
-       + " " + (width-d.parent.y) + "," + d.parent.x;
+       return leftCurve(d.parent.x, d.parent.y, 0, d.x, d.y);
        });
        
   link1 = g.selectAll(".link1")
@@ -52,20 +49,17 @@ d3.json("d3-data.json", function(error, treeData) {
     .enter().append("path")
     .attr("class", "link")
     .attr("d", function(d) {
-       return "M" + d.y*1.5 + "," + d.x
-       + "C" + (d.y + d.parent.y)/0.9 + "," + d.x
-       + " " + (d.y + d.parent.y)*1.5 + "," + d.parent.x
-       + " " + (width-d.parent.y) + "," + d.parent.x;
+       return rightCurve(d.parent.x, d.parent.y, 0, d.x, d.y);
        });
 
   // adds each node as a group
   node = g.selectAll(".node")
-    .data(nodesc.descendants())
+    .data(nodesc.descendants()[0].children)
     .enter().append("g")
     .attr("class", function(d) { 
       return "node node--internal"; })
     .attr("transform", function(d) { 
-      return "translate(" + (width-d.y) + "," + d.x + ")"; });
+      return "translate(" + 0 + "," + d.x + ")"; });
       
   node1 = g.selectAll(".node1")
     .data(nodesp.descendants()[0].children)
@@ -74,9 +68,20 @@ d3.json("d3-data.json", function(error, treeData) {
       return "node node--internal"; })
     .attr("transform", function(d) { 
       return "translate(" + d.y*1.5 + "," + d.x + ")"; });
+  
+  nodeprimaire = g.selectAll(".nodeprimary")
+				.data([d.data])
+				.enter().append("g")
+				.attr("class", function(d) {
+					return "node node--internal";})
+				.attr("transform", function(d) {
+					return "translate(" + width + ", " + height/2 + ")"; });
       
 
   // adds the circle to the node
+  nodeprimaire.append("circle")
+	.attr("r", 10);
+  
   node.append("circle")
     .attr("r", 10);
     
@@ -85,6 +90,13 @@ d3.json("d3-data.json", function(error, treeData) {
     
 
   // adds the text to the node
+  nodeprimaire.append("text")
+    .attr("dy", ".35em")
+    .attr("x", function(d) { return d.children ? -13 : 13; })
+    .style("text-anchor", function(d) { 
+		return d.children ? "end" : "start"; })
+    .text(function(d) { return d.name; });
+  
   node.append("text")
     .attr("dy", ".35em")
     .attr("x", function(d) { return d.children ? -13 : 13; })
