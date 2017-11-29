@@ -33,3 +33,7 @@ Ce qu'on prévoit de faire :
 - Prise de consigne pour la suite
 - On effectue des simplifications et des ajouts de fonctionnalités pour rendre accessible la construction du code.
 - Fonction pour la création de path automatisé.
+29/11/2017
+- Évaluation des choses à faire pour interfacer D3js avec la database
+- On crée une API pour accéder à la database et on continue de corriger le rendu de D3js (changement dans les styles et transformation en fonctionnel)
+- Solution de gestion du noeud centrale, optimisation design.
