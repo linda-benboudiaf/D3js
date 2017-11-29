@@ -4,7 +4,7 @@ body {
 
 
 ul {
-
+    cursor: position: relative;
     padding: 0;
     background-color: #c7d31dd2;
     position: fixed;
@@ -40,18 +40,12 @@ margin-right: 200px;
 #panel, #cadre{
     padding: 10px;
     text-align: right;
-    background-color: #e8ecdad3;
-    border: solid 1px #eede03;
-
-
+    background-color: rgb(204, 245, 102);
+    border: solid 1px #bcdd00;
+    cursor: pointer;
 }
 
 button:hover :not(.active) {
-    background-color: rgb(169, 238, 8);
-    color: white;
-}
-
-#cadre a:hover :not(.active) {
     background-color: rgb(169, 238, 8);
     color: white;
 }
@@ -60,4 +54,34 @@ button:hover :not(.active) {
     padding: 50px;
     display: none;
 }
+.slideshow{
+    position: relative;
+  }
 
+.dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(207, 230, 1);
+    display: inline-block;
+    border-radius: 30%;
+    margin-top: 15px
+  }
+  .suiv {
+    right: 0;
+  }
+  .prec, .suiv {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .prec:hover, .suiv:hover {
+    background-color: rgba(229, 233, 10, 0.918);
+  }
+ 
