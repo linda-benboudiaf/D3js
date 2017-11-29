@@ -3,12 +3,11 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Connexion</title>
-      <link rel="stylesheet" href="css/login.css">
-    <a href="index.html" > <img src="img/logo3.png" alt="logo" width="100" height="100"> </a>
+    <link rel="stylesheet" href="css/login.css">
+    <a href="index.php" > <img src="img/logo3.png" alt="logo" width="100" height="100"> </a>
       
 </head>
-
+<title>Connexion</title>
 <body>
 
 

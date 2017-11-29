@@ -29,12 +29,7 @@
 
 <!-- je dois mettre un SlideShow ici en inserants des div -->
         <div class="slideshow">
-                    <div class="slide">
-                    <img src="img/lili4.png" alt="1" width="100%" height="160">
-                    </div>
-                    <div class="slide">
-                    <img src="img/lili5.png" alt="1" width="100%" height="160">
-                    </div>
+
                     <div class="slide">
                     <img src="img/lili2.png" alt="1" width="100%" height="160">
                     </div>
@@ -61,6 +56,12 @@ In sed blandit enim. Vestibulum vehicula consequat diam,
 sit amet accumsan orci faucibus eu. Nulla a elit vitae quam maximus facilisis. Donec nec ultrices purus, vel tempus tellus. Nunc fermentum libero quis ipsum consequat bibendum. Nunc interdum purus eget porta auctor. 
 Sed mollis magna sit amet tortor fermentum bibendum. Quisque interdum, ante eu pulvinar congue, metus diam varius ipsum, a suscipit dolor est nec mauris. 
 </p>
+            <button class="img"> Click </button>
+            <div class="img_affich ">
+            <img src = "img/img4.png" alt ="img" width ="300" hight="300" >
+            <img src = "img/img2.png" alt ="img" width ="300" hight="300" >
+            <img src = "img/img3.png" alt ="img" width ="300" hight="300" >
+            </div>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Integer ut lacus et nunc porta elementum. Nunc eu ultricies ex.
 Nam consequat luctus maximus. Praesent mattis venenatis ante, eget tincidunt eros placerat et. 
@@ -69,6 +70,7 @@ In sed blandit enim. Vestibulum vehicula consequat diam,
 sit amet accumsan orci faucibus eu. Nulla a elit vitae quam maximus facilisis. Donec nec ultrices purus, vel tempus tellus. Nunc fermentum libero quis ipsum consequat bibendum. Nunc interdum purus eget porta auctor. 
 Sed mollis magna sit amet tortor fermentum bibendum. Quisque interdum, ante eu pulvinar congue, metus diam varius ipsum, a suscipit dolor est nec mauris. 
 </p>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Integer ut lacus et nunc porta elementum. Nunc eu ultricies ex.
 Nam consequat luctus maximus. Praesent mattis venenatis ante, eget tincidunt eros placerat et. 
