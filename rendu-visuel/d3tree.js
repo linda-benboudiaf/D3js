@@ -41,6 +41,7 @@ d3.json("d3-data.json", function(error, treeData) {
   
   nodesp = treemap(nodesp);
   
+  // prochaine fois, ajouter fraternelles et maritales au graph...
   nodesw = treemap(nodesw);
   
   d = treemap(d);
@@ -61,6 +62,14 @@ d3.json("d3-data.json", function(error, treeData) {
     .attr("d", function(d) {
        return rightCurve(d.parent.x, width/1.5, 0, d.x, d.y);
        });
+       
+  linkw = g.selectAll(".linkw")
+	.data(nodesw.descendants()[0].children)
+	.enter().append("path")
+	.attr("class", "link")
+	.attr("d", function(d, c) {
+		return topCurve(width/1.5, d.parent.x, (width/1.5), (d.x - 50));
+		});
 
   // adds each node as a group
   node = g.selectAll(".node")
@@ -83,18 +92,26 @@ d3.json("d3-data.json", function(error, treeData) {
 				.data([d.data])
 				.enter().append("g")
 				.attr("class", function(d) {
-					return "node node--internal";})
+					return "node node--internal"; })
 				.attr("transform", function(d) {
 					return "translate(" + width/1.5 + ", " + nodesc.x + ")"; });
+	
+  nodewife = g.selectAll(".nodewife")
+				.data(nodesw.data.wife)
+				.enter().append("g")
+				.attr("class", function(d) {
+					return "node node--internal"; })
+				.attr("transform", function(d) {
+					return "translate(" + width/1.5 + "," + (nodesc.x-60) + ")"; });
 					
 					
   // on regroupe tout ce beau monde
-	
-  listnoeuds = [nodeprimaire, node1, node];
+  
+  listnoeuds = [nodeprimaire, node1, node, nodewife];
       
 
   // on ajoute les cercles
- 
+  
   listnoeuds.forEach(function(e) {
 	  e.append("circle")
 		.attr("r", 10);

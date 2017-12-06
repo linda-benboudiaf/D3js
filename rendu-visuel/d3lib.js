@@ -17,3 +17,14 @@ function rightCurve(parentx, parenty, espacement, x, y) {
 	" " +  ((y * 1.5) - espacement)  + ", " + parentx +
 	" " + parenty + ", " + parentx;
 }
+
+
+function topCurve(parentx, parenty, x, y) {
+	return "M" + parentx + ", " + parenty +
+	" " + x + ", " + y;
+}
+
+function bottomCurve(parentx, parenty, x, y) {
+	return "M" + x + ", " + y +
+	" " + parentx + ", " + parenty;
+}
