@@ -10,18 +10,20 @@
 
 
         <div id="login"> 
-                <form name='form-login' action="ecrire.php" method="post"> <!-- Formulaire de login -->
-                    <input name="identifiant" type="text" id="user" placeholder= " Cree un Identifiant">
-                    <input name="nom" type="text" id="nom"  placeholder="Nom" >
+                <form name='form-sub' action="ecrire.php" method="post"> <!-- Formulaire de login -->
+                    <input name="pseudo" type="text" id="user" placeholder= " Cree un Identifiant" required>
+                    <input name="nom" type="text" id="nom"  placeholder="Nom" required>
                     <input name="prenom" type="text" id="prenom" placeholder="Prenom">
-                    <input name="mdp" type="password" id"pass" placeholder="mot de passe">
+                    <input name="mail" type="text" id="mail" placeholder="Adresse Mail">
+                    <input name="pass" type="password" id="pass" placeholder="mot de passe"required>
 
-                    Vous estes : 
-                    <input type="radio" name="gender" value="female">Femme
-                    <input type="radio" name="gender" value="male">Homme </br>
-            
-                    <input name="nom_pere "type="text" id="nom_pere"  placeholder="Nom et Prenom Papa" >
-                    <input name ="nom_mere" type="text" id="nom_mere" placeholder="Nom et Prenom Maman">
+                    Vous estes : </br>
+                    <input name="gender" type="radio"  value="F">Femme
+                    <input name="gender" type="radio"  value="M">Homme </br>
+
+                    <input name="pere" type="text" id="pere"  placeholder="Nom et Prenom Papa" required>
+                    <input name ="mere" type="text" id="mere" placeholder="Nom et Prenom Maman"required>
+
                     <input type="submit" value="inscription"> <!-- button submit de connexion --> 
                   
               </form>
