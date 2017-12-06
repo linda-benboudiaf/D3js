@@ -11,15 +11,10 @@
 <body>
 
 
-<ul>
-    <li id="menu"> <a href="about.html">GeneaTree</a> </li>
-    <li id="menu"> <a href="about.html">à Propos</a> </li>
-</ul>
-
     <div id="login"> 
-      <form name='form-login'> <!-- Formulaire de login -->
-          <input type="text" id="user" placeholder="Nom d'utilisateur">
-          <input type="password" id"pass" placeholder="mot de passe">
+      <form name='form-login' method ="post" action ="profil.php"> <!-- Formulaire de login -->
+          <input name = "pseudo" type="text" id="user" placeholder="Nom d'utilisateur">
+          <input name="pass"     type="password" id"pass" placeholder="mot de passe">
     
         <input type="submit" value="Connexion"> <!-- button submit de connexion --> 
     </form>

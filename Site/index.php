@@ -7,18 +7,18 @@
     <a href="subscribe.php"><input type="button" value="S'engregister !" /></a>
 </div> 
 <div id= "panel">    
-    <form name='form-login'> <!-- Formulaire de login -->
-    <input type="text" id="user" placeholder="Nom d'utilisateur">
-    <input type="password" id"pass" placeholder="mot de passe">
-    <input type="button" value="GO !" /></br></br>
-    Premiere visite ? <a href="subscribe.php"><input type="button" value="S'engregister !" /></a>
+        <form name='form-login' method ="post" action ="profil.php"> <!-- Formulaire de login -->
+            <input name = "pseudo" type="text"     id="user" placeholder="Nom d'utilisateur" required>
+            <input name=  "pass"   type="password" id="pass" placeholder="mot de passe" required>
+            <input  type="submit"   value=" GO !" /></br></br>
+            Premiere visite ? <a href="subscribe.php"><input type="button" value="S'engregister !" /></a>
     </form> 
 </div> 
-</head>
+
 <body> 
        
 <ul>
-    <li > <a href="about.php">Home</a> </li>
+    <li > <a href="home.php">Home</a> </li>
     <li > <a href="about.php">GeneaTree</a> </li>
     <li > <a href="contact.php">Contact</a> </li>
 </ul>
@@ -38,9 +38,9 @@
                     </div>
                     
             
-        <a class="prec" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="suiv" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+                    <a class="prec" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="suiv" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <div style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>

@@ -5,7 +5,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <a href="index.html"><img onmouseover="zoom(this)" 
+    <a href="index.php"><img onmouseover="zoom(this)" 
     onmouseout="dezoom(this)" src="img/logo3.png" alt="logo" width="100" height="100"></a>
 </head>
 
