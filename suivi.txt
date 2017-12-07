@@ -37,3 +37,12 @@ Ce qu'on prévoit de faire :
 - Évaluation des choses à faire pour interfacer D3js avec la database
 - On crée une API pour accéder à la database et on continue de corriger le rendu de D3js (changement dans les styles et transformation en fonctionnel)
 - Solution de gestion du noeud centrale, optimisation design.
+- Creation des pages du site en PHP, html. 
+- la mise en page en utilisant CSS, JS et jQuery.
+- Ajouter un formulaire d’enregistrement et de connexion. 
+- creation de la BDD (mySQL) et les deux tables User et Personne.
+- Etablir la connexion a la BDD (Php/MySQL) en utilisant PDO. 
+- Générer un affichage JSON (json_encode) de la table Personne qui contient les parents et les enfants. 
+Remarques prof: //tableau associatif, manipulation des objet 
+// $données en tableau associatif, une requête pour les parents et une autre pour les enfants … (a revoir)  
+
