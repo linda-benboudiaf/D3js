@@ -34,3 +34,12 @@ https://gw.geneanet.org/tdowling?lang=fr&n=soros&oc=0&p=george&type=tree
 Birthday Calender : 
 
 https://chezsoi.org/lucas/genealogic-d3/
+
+faire de jolies diagonales verticales : 
+http://bl.ocks.org/aaizemberg/8693661/dcc2847e09bea40aa04ea9cdd663ade3fd480e0d
+https://bl.ocks.org/d3noob/b024fcce8b4b9264011a1c3e7c7d70dc
+
+réflexion : 
+
+Trouver le moyen de gérer proprement à la fois le resizing et le rendu des tree peut se faire via des fonctions de spice et zoom/dézoom. 
+Il faut également penser à l'aspect dynamique qui pourra être intégré avec des onclick et des onmouseover.
