@@ -43,3 +43,8 @@ réflexion :
 
 Trouver le moyen de gérer proprement à la fois le resizing et le rendu des tree peut se faire via des fonctions de spice et zoom/dézoom. 
 Il faut également penser à l'aspect dynamique qui pourra être intégré avec des onclick et des onmouseover.
+
+nouvelle route : 
+
+On utilise graphique un forced-graph pour gérer l'affichage : https://bl.ocks.org/pkerpedjiev/f2e6ebb2532dae603de13f0606563f5b
+http://www.decembercafe.org/demo/relation/
