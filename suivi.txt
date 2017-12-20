@@ -45,4 +45,8 @@ Ce qu'on prévoit de faire :
 - Générer un affichage JSON (json_encode) de la table Personne qui contient les parents et les enfants. 
 Remarques prof: //tableau associatif, manipulation des objet 
 // $données en tableau associatif, une requête pour les parents et une autre pour les enfants … (a revoir)  
+le 20/12/2017 : 
+ - Mettre en place le profil et la page de l’utilisateur $_SESSION [‘user’], open Session, le contenue a afficher quand l’utilisateur est connecter et vice-versa … 
+- Cree un button qui permet a l’utilisateur de se déconnecter session_destroy(); 
+- on peut désormais, cree un compte, se connecter a notre session et se déconnecter de notre session. 
 
