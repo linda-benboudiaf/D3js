@@ -1,24 +1,28 @@
+<?php session_start(); ?>
 <!DOCTYPE> 
-
 <html> 
 <?php include ("header.html") ?>
 
+<?php if (!isset($_SESSION['user'])) {?> 
+
 <div id= "cadre"> <button class="log">Connexion</button> 
-    <a href="subscribe.php"><input type="button" value="S'engregister !" /></a>
+    <a href="subscribe.php"><input type="button" value="S'enregister !" /></a>
 </div> 
 <div id= "panel">    
         <form name='form-login' method ="post" action ="profil.php"> <!-- Formulaire de login -->
             <input name = "pseudo" type="text"     id="user" placeholder="Nom d'utilisateur" required>
-            <input name=  "pass"   type="password" id="pass" placeholder="mot de passe" required>
+            <input name=  "pass"   type="password" id="pass" placeholder="mot de passe"      required>
             <input  type="submit"   value=" GO !" /></br></br>
-            Premiere visite ? <a href="subscribe.php"><input type="button" value="S'engregister !" /></a>
-    </form> 
-</div> 
+            Premiere visite ? <a href="subscribe.php"><input type="button" value="S'enregister !" /></a>
+        </form> 
+</div> <?php } else {echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
+<a href = "logout.php"><button> Deconnexion </button> </a><?php 
+}?> <?php if ($_SESSION['user']= null) {  session_destroy ();}?>
 
 <body> 
        
 <ul>
-    <li > <a href="home.php">Home</a> </li>
+    <li > <a href="home.php">  Home</a> </li>
     <li > <a href="about.php">GeneaTree</a> </li>
     <li > <a href="contact.php">Contact</a> </li>
 </ul>
@@ -36,8 +40,6 @@
                     <div class="slide">
                     <img src="img/lili3.png" alt="1" width="100%" height="160">
                     </div>
-                    
-            
                     <a class="prec" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="suiv" onclick="plusSlides(1)">&#10095;</a>
                     </div>
@@ -70,7 +72,6 @@ In sed blandit enim. Vestibulum vehicula consequat diam,
 sit amet accumsan orci faucibus eu. Nulla a elit vitae quam maximus facilisis. Donec nec ultrices purus, vel tempus tellus. Nunc fermentum libero quis ipsum consequat bibendum. Nunc interdum purus eget porta auctor. 
 Sed mollis magna sit amet tortor fermentum bibendum. Quisque interdum, ante eu pulvinar congue, metus diam varius ipsum, a suscipit dolor est nec mauris. 
 </p>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Integer ut lacus et nunc porta elementum. Nunc eu ultricies ex.
 Nam consequat luctus maximus. Praesent mattis venenatis ante, eget tincidunt eros placerat et. 
