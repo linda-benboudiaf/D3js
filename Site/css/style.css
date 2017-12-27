@@ -24,12 +24,11 @@ li a:hover:not(.active) {
     background-color: #c7d31dd2;
     padding: 10px;
     text-align: center;
-    display: block;
+
 }
 .contenue {
 margin-left: 200px;
-padding-left: 20px;
-margin-right: 200px;
+margin-right: 100px;
 }
 #panel, #cadre{
     padding: 10px;
