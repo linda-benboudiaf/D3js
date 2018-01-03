@@ -85,7 +85,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     // add titles for mouseover blurbs
     var nodetext = nodeprimary.append("text")
 		.attr("dy", ".35em")
-		.attr("x", function(d) { return 13; })
+		.attr("x", function(d) { return -5; })
+		.attr("font-size", function(d) { return 5; })
         .text(function(d) { 
             if ('name' in d)
                 return d.name;
