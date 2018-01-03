@@ -64,11 +64,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .enter().append("line")
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-    var node = gDraw.append("g")
-        .attr("class", "node")
-        .selectAll("circle")
+    var nodeprimary = gDraw.selectAll(".node")
         .data(graph.nodes)
-        .enter().append("circle")
+        .enter().append("g");
+    
+     var node = nodeprimary.append("circle")
         .attr("r", 5)
         .attr("fill", function(d) { 
             if ('color' in d)
@@ -83,9 +83,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
       
     // add titles for mouseover blurbs
-    node.append("text")
-		.attr("dx", 12)
+    var nodetext = nodeprimary.append("text")
 		.attr("dy", ".35em")
+		.attr("x", function(d) { return 13; })
         .text(function(d) { 
             if ('name' in d)
                 return d.name;
@@ -126,6 +126,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
+        nodetext.attr("transform", function(d) {
+					return "translate(" + d.x + "," + d.y + ")"; });
     }
 
     var brushMode = false;
