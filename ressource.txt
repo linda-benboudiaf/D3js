@@ -48,3 +48,6 @@ nouvelle route :
 
 On utilise graphique un forced-graph pour gérer l'affichage : https://bl.ocks.org/pkerpedjiev/f2e6ebb2532dae603de13f0606563f5b
 http://www.decembercafe.org/demo/relation/
+
+
+Generateur de faux texte : https://fr.lipsum.com/
