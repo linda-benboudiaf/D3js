@@ -9,7 +9,7 @@
   stroke-width: 1.5px;
 }
 
-.node .selected {
+.selected {
   stroke: black;
 }
 
