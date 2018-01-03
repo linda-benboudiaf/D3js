@@ -4,8 +4,8 @@
     text-anchor: end;
 }
 
-#d3_selectable_force_directed_graph .node {
-  stroke: #fff;
+.nodecircle {
+  stroke: #e1e1e1;
   stroke-width: 1.5px;
 }
 
