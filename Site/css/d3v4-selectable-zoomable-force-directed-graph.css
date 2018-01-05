@@ -1,0 +1,24 @@
+#d3_selectable_force_directed_graph svg {
+    border: 1px solid;
+    font: 13px sans-serif;
+    text-anchor: end;
+}
+
+.nodecircle {
+  stroke: #e1e1e1;
+  stroke-width: 1.5px;
+}
+
+.selected {
+  stroke: black;
+}
+
+.link {
+  stroke: #999;
+}
+
+
+.node text { 
+  font: 12px sans-serif;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
