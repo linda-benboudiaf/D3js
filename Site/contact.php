@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<h1> Contactez-nous ! </h1>
 <div id="contact">
         <form name='form-contact' > <!-- Formulaire de contact -->
 

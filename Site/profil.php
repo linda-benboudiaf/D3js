@@ -23,3 +23,4 @@ $_SESSION['user'] = $_POST ['pseudo'];
 //var_dump ($_SESSION);
 
 ?>
+ 
