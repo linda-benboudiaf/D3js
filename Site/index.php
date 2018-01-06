@@ -17,7 +17,7 @@
         </form> 
 </div> <?php } else {echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
 <a href = "logout.php"><button> Deconnexion </button> </a><?php 
-}?> <?php if ($_SESSION['user']= null) {  session_destroy ();}?>
+}?> 
 
 <body> 
        
