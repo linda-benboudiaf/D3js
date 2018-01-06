@@ -1,8 +1,0 @@
-[
-  {"name": "Osiris",   "parent": ""},
-  {"name": "Isis",   "parent": ""},
-  {"name": "Ra",  "parent": "Osiris"},
-  {"name": "Seth",  "parent": "Osiris"},
-  {"name": "Ra",  "parent": "Isis"},
-  {"name": "Seth",  "parent": "Isis"}
-]
