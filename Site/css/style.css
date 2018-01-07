@@ -8,6 +8,13 @@ ul {
     position: fixed;
     height: 100%; 
 }
+ol {
+    display: block;
+    color:  rgb(139, 69, 4);
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
 
 li a {
     display: block;

@@ -8,25 +8,37 @@
     <a href="index.php"><img onmouseover="zoom(this)" 
      onmouseout="dezoom(this)" src="img/logo3.png" alt="logo" width="120" height="120">
     </a>
-
+    <?php if (isset($_SESSION['user'])) {?> 
+    <a href = "logout.php"><button> Deconnexion </button> </a>
+    <?php echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
+<a href = "logout.php"><button> Deconnexion </button> </a>
+    <li> <a href="about.php">GeneaTree</a> </li>
+   
+<?php }?> 
+<?php if ($_SESSION ['user']= NULL){session_destroy();} ?>  
 </head>
 
 <body>
-   
+
         <ul>
-                <li > <a href="home.html">Home</a> </li>
                 <li > <a href="about.php">GeneaTree</a> </li>
                 <li > <a href="contact.php">Contact</a> </li>
             </ul>
     <div class="contenue">
-            <H1>Locum petivere Paleas nomine</H1>
+
+            <h1>Bienvenue</h1>
+            <p>Les noms de famille sont innombrables et très variés. 
+            Certains sont aujourd'hui très répandus, d'autres ont totalement disparu. 
+            <strong>GeneaTree</strong> recense plusieurs dizaines de milliers de patronymes en tout genre. 
+            Découvrez ici leur origine géographique et leur étymologie ! </p>
+
     <button class="img"> Click </button>
     <div class="img_affich ">
     <img src = "img/img5.png" alt ="img" width ="300" hight="300" >
     <img src = "img/img6.png" alt ="img" width ="300" hight="300" >
     <img src = "img/img7.png" alt ="img" width ="300" hight="300" >
     </div>
-            </div>
+        </div>
 </body>
 
 <footer class="footer">

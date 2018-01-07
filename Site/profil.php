@@ -1,6 +1,6 @@
 
 <?php
-
+session_start(); 
 try {
     $bdd = new PDO('mysql:host=localhost;dbname=bis_genea;charset=utf8', 'root', 'root');
 
@@ -8,6 +8,8 @@ try {
 catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
   }
+
+  include ("header.html"); 
 
 //$hash_password= hash('sha256', $password); //Password encryption 
 $stmt = $bdd->prepare('SELECT identifiant FROM user WHERE pseudo = :pseudo AND mdp = :pass');
@@ -22,7 +24,7 @@ $count=$stmt->rowCount();
 $data=$stmt->fetch(PDO::FETCH_ASSOC);
 // echo $count ;
 echo "Bienvenue   ".$_POST ['pseudo']; 
-header('Location: index.php');
+header('Location: home.php');
 //exit();
 $_SESSION['user'] = $_POST ['pseudo'];
 //$_SESSION['user']['nom'] = array ();
