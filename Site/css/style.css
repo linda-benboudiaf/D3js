@@ -2,8 +2,8 @@ body {
     margin: 0;
 }
 ul {
-    cursor: position: relative;
-    padding: 0;
+  
+    padding:0;
     background-color: #c7d31dd2;
     position: fixed;
     height: 100%; 
@@ -85,6 +85,7 @@ button.img:hover{
 }
 button.img {
     text-align: center;
+    margin-bottom: 30px;
     margin-left: 400px;
     border-radius: 8px;
     border: none; 

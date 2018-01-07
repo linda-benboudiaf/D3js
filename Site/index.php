@@ -16,13 +16,15 @@
             Premiere visite ? <a href="subscribe.php"><input type="button" value="S'enregister !" /></a>
         </form> 
 </div> <?php } else {echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
-<a href = "logout.php"><button> Deconnexion </button> </a><?php 
-}?> 
+<a href = "logout.php"><button> Deconnexion </button> </a>
+<li> <a href="home.html"> Profil </a> </li> 
+<?php }?> 
+<?php if ($_SESSION ['user']= NULL){session_destroy();} ?>  
 
 <body> 
        
 <ul>
-    <li > <a href="home.php">  Home</a> </li>
+    <li > <a href="home.html">Home</a> </li>
     <li > <a href="about.php">GeneaTree</a> </li>
     <li > <a href="contact.php">Contact</a> </li>
 </ul>

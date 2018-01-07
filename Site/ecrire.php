@@ -1,7 +1,7 @@
 
 <?php
 try {
-        $bdd = new PDO('mysql:host=localhost;dbname=genea;charset=utf8mb4', 'root', 'root');
+        $bdd = new PDO('mysql:host=localhost;dbname=bis_genea;charset=utf8', 'root', 'root');
 
 } 
 catch (Exception $e) {
