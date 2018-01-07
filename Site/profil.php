@@ -1,8 +1,9 @@
 
 <?php
-session_start();
-//echo 'Hello'; 
-$bdd = new PDO ('mysql:host=localhost;dbname=bis_genea;charset=utf8','root', 'root');
+
+=======
+include('header.html');
+
 //$hash_password= hash('sha256', $password); //Password encryption 
 $stmt = $bdd->prepare('SELECT identifiant FROM user WHERE pseudo = :pseudo AND mdp = :pass');
 $donnee = $stmt->fetchall(PDO :: FETCH_ASSOC);
