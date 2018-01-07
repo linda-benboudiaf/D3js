@@ -1,8 +1,13 @@
 
 <?php
 
-=======
-include('header.html');
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=bis_genea;charset=utf8', 'root', 'root');
+
+} 
+catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+  }
 
 //$hash_password= hash('sha256', $password); //Password encryption 
 $stmt = $bdd->prepare('SELECT identifiant FROM user WHERE pseudo = :pseudo AND mdp = :pass');
