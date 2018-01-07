@@ -53,9 +53,9 @@
             </div>
 <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
 <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
-<p>Nous essayons de faire de <strong> GeneaTree </strong> une encyclopédie francophone de la généalogie, écrite coopérativement par ses utilisateurs. 
-    Ce site a été mis en place à l'initiative de Geneanet. </p>
-<p> Les sujets traités sur GeneaWiki sont vastes : la généalogie (méthodologie, relevés, généalogie familiale), 
+<p>Nous essayons de faire de <strong> GeneaTree </strong> une encyclopédie francophone 
+de la généalogie, écrite coopérativement par ses utilisateurs. </p>
+<p> Les sujets traités sur GeneaTree sont vastes : la généalogie (méthodologie, relevés, généalogie familiale), 
     l'histoire locale ou familiale, l'héraldique, l'onomastique, les faits historiques, ... 
     Tout ce qui touche de près ou de loin à la généalogie !</p>
 
