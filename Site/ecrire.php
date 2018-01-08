@@ -31,9 +31,16 @@ $stmt->bindParam(':pere',               $_POST['pere'],    PDO::PARAM_STR);
 $stmt->bindParam(':mere',               $_POST['mere'],    PDO::PARAM_STR);
 
 $stmt->execute(); 
-echo $stmt->rowCount();
-echo $_POST['prenom'];
-echo ' vous estes bien enregistré !'; 
+try {
+        echo $stmt->rowCount();
+        echo $_POST['prenom'];
+        echo ' vous estes bien enregistré !'; 
+        header('Location: index.php');
+}
+catch (Exception $e) {
+        die('Erreur : ' . $e->getMessage());
+      }
+
 
 ?>
 <?php

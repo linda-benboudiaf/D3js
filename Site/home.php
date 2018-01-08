@@ -8,12 +8,9 @@
     <a href="index.php"><img onmouseover="zoom(this)" 
      onmouseout="dezoom(this)" src="img/logo3.png" alt="logo" width="120" height="120">
     </a>
-    <?php if (isset($_SESSION['user'])) {?> 
-    <a href = "logout.php"><button> Deconnexion </button> </a>
-    <?php echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
-<a href = "logout.php"><button> Deconnexion </button> </a>
-    <li> <a href="about.php">GeneaTree</a> </li>
-   
+    <?php if (isset($_SESSION['user'])) {
+    echo 'Bonjour !    '.$_SESSION ['user'] ;?>  
+<a href = "logout.php"><button> Deconnexion </button> </a> 
 <?php }?> 
 <?php if ($_SESSION ['user']= NULL){session_destroy();} ?>  
 </head>
