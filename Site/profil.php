@@ -24,11 +24,11 @@ $count=$stmt->rowCount();
 $data=$stmt->fetch(PDO::FETCH_ASSOC);
 // echo $count ;
 echo "Bienvenue   ".$_POST ['pseudo']; 
-header('Location: home.php');
+
 //exit();
 $_SESSION['user'] = $_POST ['pseudo'];
 //$_SESSION['user']['nom'] = array ();
 //var_dump ($_SESSION);
-
+header('Location: home.php');
 ?>
  

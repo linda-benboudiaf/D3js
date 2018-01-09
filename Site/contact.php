@@ -22,7 +22,6 @@
 
             <input name="nom" type="text" id="nom"  placeholder="Nom" >
             <input name="prenom" type="text" id="prenom" placeholder="Prenom">
-
             <input name ="nom_mere" type="text" id="adresse" placeholder="Adresse Mail">
             <textarea name = "message" type ="text"placeholder="Ton Message :) "></textarea>
             <input type="submit" value="Envoyer"> <!-- button submit de connexion --> 
