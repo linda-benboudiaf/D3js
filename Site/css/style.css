@@ -102,3 +102,14 @@ button.img {
     padding-bottom: 4px;  
     background-color: rgba(229, 233, 10, 0.918)
 }
+
+
+.colonne {
+
+    padding: 10px;
+    height: 300px;
+
+}
+ .droite {
+ border-left :60% ; 
+}

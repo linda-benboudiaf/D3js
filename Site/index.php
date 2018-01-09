@@ -3,6 +3,7 @@
 <html> 
 <?php include ("header.html") ?>
 
+<body> 
 <?php if (!isset($_SESSION['user'])) {?> 
 
 <div id= "cadre"> <button class="log">Connexion</button> 
@@ -16,16 +17,13 @@
             Premiere visite ? <a href="subscribe.php"><input type="button" value="S'enregister !" /></a>
         </form> 
 
-</div> <?php } else {echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
+</div> <ul><?php } else {echo 'Bonjour !    '.$_SESSION ['user']; $_POST['nom'] ;  ?>  
 <a href = "logout.php"><button> Deconnexion </button> </a>
-   <ol> <a href="about.php">GeneaTree</a> </ol>
-    <ol> <a href="home.php">Profil</a> </ol> 
+ <ul><li> <a href="about.php">GeneaTree</a> </li>
+    <li> <a href="home.php">Profil</a> </li> 
 <?php }?> 
-<?php if ($_SESSION ['user']= NULL){session_destroy();} ?>  
+<?php if ($_SESSION ['user']== NULL){session_destroy();} ?>  
 
-<body> 
-       
-<ul>
     <li > <a href="footer.html"> A Propos</a> </li>
     <li > <a href="contact.php">Contact</a> </li>
 </ul>
@@ -58,13 +56,6 @@ de la généalogie, écrite coopérativement par ses utilisateurs. </p>
 <p> Les sujets traités sur GeneaTree sont vastes : la généalogie (méthodologie, relevés, généalogie familiale), 
     l'histoire locale ou familiale, l'héraldique, l'onomastique, les faits historiques, ... 
     Tout ce qui touche de près ou de loin à la généalogie !</p>
-
-<button class="img"> Click </button>
-<div class="img_affich ">
-<img src = "img/img5.png" alt ="img" width ="300" hight="300" >
-<img src = "img/img6.png" alt ="img" width ="300" hight="300" >
-<img src = "img/img7.png" alt ="img" width ="300" hight="300" >
-</div>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Integer ut lacus et nunc porta elementum. Nunc eu ultricies ex.

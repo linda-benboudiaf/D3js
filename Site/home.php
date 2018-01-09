@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE> 
 <html>
 <head>
@@ -8,11 +9,7 @@
     <a href="index.php"><img onmouseover="zoom(this)" 
      onmouseout="dezoom(this)" src="img/logo3.png" alt="logo" width="120" height="120">
     </a>
-    <?php if (isset($_SESSION['user'])) {
-    echo 'Bonjour !    '.$_SESSION ['user'] ;?>  
-<a href = "logout.php"><button> Deconnexion </button> </a> 
-<?php }?> 
-<?php if ($_SESSION ['user']= NULL){session_destroy();} ?>  
+     
 </head>
 
 <body>
@@ -29,7 +26,20 @@
             <strong>GeneaTree</strong> recense plusieurs dizaines de milliers de patronymes en tout genre. 
             Découvrez ici leur origine géographique et leur étymologie ! </p>
 
-    <button class="img"> Click </button>
+
+            <div class="colonne">
+                    <div class="gauche"> 
+                    <h1>Parriner</h1>
+                    </div>
+                    <div class="droite"> <h1>inviter votre famille <h1> 
+                    <input type="text" nameholder="adresse mail"> </input>
+                    <button> Envoyer  </button>
+                    </div> 
+
+
+            </div>
+
+    <button class="img"> Voir contenue </button>
     <div class="img_affich ">
     <img src = "img/img5.png" alt ="img" width ="300" hight="300" >
     <img src = "img/img6.png" alt ="img" width ="300" hight="300" >

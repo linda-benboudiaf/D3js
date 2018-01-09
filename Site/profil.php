@@ -9,8 +9,7 @@ catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
   }
 
-  include ("header.html"); 
-
+  
 //$hash_password= hash('sha256', $password); //Password encryption 
 $stmt = $bdd->prepare('SELECT identifiant FROM user WHERE pseudo = :pseudo AND mdp = :pass');
 $donnee = $stmt->fetchall(PDO :: FETCH_ASSOC);
@@ -24,7 +23,6 @@ $count=$stmt->rowCount();
 $data=$stmt->fetch(PDO::FETCH_ASSOC);
 // echo $count ;
 echo "Bienvenue   ".$_POST ['pseudo']; 
-
 //exit();
 $_SESSION['user'] = $_POST ['pseudo'];
 //$_SESSION['user']['nom'] = array ();
