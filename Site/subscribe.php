@@ -11,11 +11,11 @@
 
         <div id="login"> 
                 <form name='form-sub'    action="ecrire.php" method="post"> <!-- Formulaire de login -->
-                    <input name="pseudo" type="text" id="user" placeholder= " Cree un Identifiant" required>
-                    <input name="nom"    type="text" id="nom"  placeholder="Nom" required>
-                    <input name="prenom" type="text" id="prenom" placeholder="Prenom">
-                    <input name="mail"   type="text" id="mail" placeholder="Adresse Mail">
-                    <input name="pass"   type="password" id="pass" placeholder="mot de passe"required>
+                    <input name="pseudo" type="text" placeholder= " Cree un Identifiant" required>
+                    <input name="nom"    type="text"   placeholder="Nom" required>
+                    <input name="prenom" type="text"  placeholder="Prenom">
+                    <input name="mail"   type="text"  placeholder="Adresse Mail">
+                    <input name="pass"   type="password"  placeholder="mot de passe"required>
 
                     Vous estes : </br>
                     <input name="gender" type="radio"  value="F">Femme
