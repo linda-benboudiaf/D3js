@@ -109,11 +109,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .force("link", d3v4.forceLink()
                 .id(function(d) { return d.id; })
                 .distance(function(d) { 
-                    return 30;
-                    //var dist = 20 / d.value;
+                    //return 30;
+                    var dist = 30 - d.value;
                     //console.log('dist:', dist);
 
-                    //return dist; 
+                    return dist; 
                 })
               )
         .force("charge", d3v4.forceManyBody())
