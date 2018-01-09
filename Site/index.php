@@ -11,8 +11,8 @@
 </div> 
 <div id= "panel">    
         <form name='form-login' method ="post" action ="profil.php"> <!-- Formulaire de login -->
-            <input name = "pseudo" type="text"     id="user" placeholder="Nom d'utilisateur" required>
-            <input name =  "pass"  type="password" id="pass" placeholder="mot de passe"      required>
+            <input name = "pseudo" type="text"   placeholder="Nom d'utilisateur" required>
+            <input name =  "pass"  type="password"  placeholder="mot de passe"      required>
             <input  type= "submit" value=" GO !" /></br></br>
             Premiere visite ? <a href="subscribe.php"><input type="button" value="S'enregister !" /></a>
         </form> 

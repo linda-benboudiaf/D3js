@@ -27,17 +27,20 @@
             Découvrez ici leur origine géographique et leur étymologie ! </p>
 
 
+            <div class="cl">
             <div class="colonne">
-                    <div class="gauche"> 
-                    <h1>Parriner</h1>
-                    </div>
-                    <div class="droite"> <h1>inviter votre famille <h1> 
-                    <input type="text" nameholder="adresse mail"> </input>
-                    <button> Envoyer  </button>
-                    </div> 
-
-
+              <h2>Parrainer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Quisque accumsan tincidunt eros non tincidunt. Vestibulum sodales sagittis quam.
+                  Vestibulum id purus magna. Vestibulum eleifend quam ut rhoncus sagittis. 
+                  Curabitur auctor quis magna eu finibus. </p>
             </div>
+            <div class="colonne" >
+              <h2>Envoyer une un invitations à vos proche</h2>
+                <input type="text" placeholder ="Adresse mail" required> 
+                <button type = "submit"> Envoyer <button>
+            </div>
+          </div>
 
     <button class="img"> Voir contenue </button>
     <div class="img_affich ">
@@ -45,7 +48,13 @@
     <img src = "img/img6.png" alt ="img" width ="300" hight="300" >
     <img src = "img/img7.png" alt ="img" width ="300" hight="300" >
     </div>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Quisque accumsan tincidunt eros non tincidunt. Vestibulum sodales sagittis quam.
+                  Vestibulum id purus magna. Vestibulum eleifend quam ut rhoncus sagittis. 
+                  Curabitur auctor quis magna eu finibus. </p>    
         </div>
+
+   
 </body>
 
 <footer class="footer">

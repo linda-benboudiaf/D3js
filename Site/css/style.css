@@ -105,11 +105,15 @@ button.img {
 
 
 .colonne {
-
+    float: left;
+    width: 33.33%;
     padding: 10px;
-    height: 300px;
-
+    height: 300px; 
 }
- .droite {
- border-left :60% ; 
+
+
+.cl:after {
+    content: "";
+    display: table;
+    clear: both;
 }
