@@ -26,7 +26,7 @@
 
                     <input type="submit" value="inscription"> <!-- button submit de connexion --> 
                   
-              </form>
+                </form>
 </div>
 
 </body>

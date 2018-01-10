@@ -9,7 +9,6 @@
     <a href="index.php"><img onmouseover="zoom(this)" 
     onmouseout="dezoom(this)" src="img/logo3.png" alt="logo" width="100" height="100"></a>
     <ul>
-    <li> <a href="about.php">GeneaTree</a> </li>
     <li > <a href="footer.html"> A Propos</a> </li>
     <li > <a href="contact.php">Contact</a> </li>
 </ul>
