@@ -1,1 +1,1 @@
-Projet Genea par Linda et Pacman
+Projet Genea par Linda
